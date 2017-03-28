@@ -1,0 +1,10 @@
+<aura:component controller="AnalyticsController">
+
+  <ltng:require scripts="{!'/resource/analytics'}" afterScriptsLoaded="{!c.init}" />
+    
+  <aura:attribute name="userdata" type="AnalyticsController.UserData" default="{}"/>
+  <aura:attribute name="trackingid" type="String" default=""/>
+  <aura:attribute name="userdataLoaded" type="Boolean" description="true if userdata loaded" access="private" />
+  <aura:attribute name="trackingidLoaded" type="Boolean" description="true if trackingid loaded" access="private" />
+	
+</aura:component>
